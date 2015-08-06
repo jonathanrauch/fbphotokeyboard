@@ -15,8 +15,8 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //loginButton.readPermissions = ["photos"]
+        self.loginButton.delegate = self
+        loginButton.readPermissions = ["user_photos"]
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,6 +25,18 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
 
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
+        let userDefaults = NSUserDefaults(suiteName: "group.com.rababa.FacebookPhotoKeyboard")
+        let token = FBSDKAccessToken.currentAccessToken()
+        let tokenDictionary = [
+            "appID":token.appID,
+            "userID":token.userID,
+            "tokenString":token.tokenString,
+            "permissions":Array(token.permissions),
+            "declinedPermissions":Array(token.declinedPermissions),
+            "expirationDate":token.expirationDate,
+            "refreshDate":token.refreshDate]
+        userDefaults?.setObject(tokenDictionary, forKey: "access_token")
+        userDefaults?.synchronize()
         
     }
 

@@ -27,7 +27,7 @@
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>FacebookAppID</key>
-	<string>1437839696546193</string>
+	<string>1437913549872141</string>
 	<key>FacebookDisplayName</key>
 	<string>PhotoKeyboard</string>
 	<key>CFBundleURLTypes</key>
@@ -36,6 +36,7 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>fb1437839696546193</string>
+				<string>fb1437913549872141</string>
 			</array>
 		</dict>
 	</array>
