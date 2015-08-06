@@ -66,6 +66,8 @@
 		D8BD6ECF1B7350E400D432DC /* FacebookPhotosCustomKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FacebookPhotosCustomKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8BD6ED21B7350E400D432DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8BD6ED31B7350E400D432DC /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		D8EAE25E1B7360A800BFB33D /* FacebookPhotosCustomKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FacebookPhotosCustomKeyboard.entitlements; sourceTree = "<group>"; };
+		D8EAE25F1B7360B500BFB33D /* FacebookPhotoKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FacebookPhotoKeyboard.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 		ABAC10571B734CC400E40EB9 /* FacebookPhotoKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				D8EAE25F1B7360B500BFB33D /* FacebookPhotoKeyboard.entitlements */,
 				ABAC105A1B734CC400E40EB9 /* AppDelegate.swift */,
 				ABAC105C1B734CC400E40EB9 /* ViewController.swift */,
 				ABAC105E1B734CC400E40EB9 /* Main.storyboard */,
@@ -174,6 +177,7 @@
 		D8BD6ED01B7350E400D432DC /* FacebookPhotosCustomKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				D8EAE25E1B7360A800BFB33D /* FacebookPhotosCustomKeyboard.entitlements */,
 				D8BD6ED31B7350E400D432DC /* KeyboardViewController.swift */,
 				D8BD6ED11B7350E400D432DC /* Supporting Files */,
 			);
@@ -260,6 +264,12 @@
 				TargetAttributes = {
 					ABAC10541B734CC300E40EB9 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = K5MRNT2P52;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					ABAC10691B734CC400E40EB9 = {
 						CreatedOnToolsVersion = 6.4;
@@ -267,6 +277,12 @@
 					};
 					D8BD6ECE1B7350E400D432DC = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = K5MRNT2P52;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -515,10 +531,14 @@
 			baseConfigurationReference = 1324C2D8A896D1E2C99CB998 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FacebookPhotoKeyboard/FacebookPhotoKeyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FacebookPhotoKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rababa.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -527,10 +547,14 @@
 			baseConfigurationReference = 8871C846B91412AC1287178B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FacebookPhotoKeyboard/FacebookPhotoKeyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FacebookPhotoKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rababa.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -573,6 +597,9 @@
 		D8BD6ED81B7350E400D432DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FacebookPhotosCustomKeyboard/FacebookPhotosCustomKeyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -580,6 +607,7 @@
 				INFOPLIST_FILE = FacebookPhotosCustomKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -587,9 +615,13 @@
 		D8BD6ED91B7350E400D432DC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FacebookPhotosCustomKeyboard/FacebookPhotosCustomKeyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FacebookPhotosCustomKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
