@@ -50,7 +50,7 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         
         let userDefaults = NSUserDefaults(suiteName: "group.com.rababa.FacebookPhotoKeyboard")
         
-        if let rawPhotosData = userDefaults?.valueForKey("user_photos") {
+        if let rawPhotosData: AnyObject = userDefaults?.valueForKey("user_photos") {
             self.photos = JSON(rawPhotosData)["data"]
             
         }
@@ -87,13 +87,16 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         return self.photos.count
     }
     
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let url = photos[indexPath.row]["link"].string!
+        let textProxy = self.textDocumentProxy as! UITextDocumentProxy
+        textProxy.insertText(url)
+    }
+    
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         var cell : ImageCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("cell_identifier", forIndexPath: indexPath) as! ImageCollectionViewCell
-
         let currentImages = photos[indexPath.row]["images"]
         let imageIndex = getBestFittingPhoto(currentImages)
-//        cell.backgroundColor = UIColor.redColor()
-        
         cell.configureForDisplay(NSURL(string: currentImages[imageIndex]["source"].string!))
         return cell
     }
@@ -112,7 +115,6 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-
         var images = photos[indexPath.row]["images"]
         let width = CGFloat(images[getBestFittingPhoto(images)]["width"].float!)
         let height = self.view.bounds.height - 10
@@ -128,28 +130,34 @@ class ImageCollectionViewCell : UICollectionViewCell {
     var cacheImageView : UIImageView!
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.imageView = UIImageView(frame: frame)
+        self.imageView = UIImageView()
+        self.contentView.addSubview(self.imageView)
     }
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-
     }
     
     func configureForDisplay(url : NSURL!) {
+        //        self.imageView = UIImageView()
+        
         let imageView = UIImageView()
+        var bounds = self.contentView.bounds
         imageView.pin_setImageFromURL(url, completion: { (result) -> Void in
             self.imageView.image = result.image
-            self.contentView.addSubview(self.imageView)
-            self.imageView.frame = self.contentView.bounds
+            //            self.contentView.addSubview(self.imageView)
+            self.imageView.frame = CGRectMake(5, 5, result.image.size.width - 5, result.image.size.height - 5)
             self.contentView.setNeedsLayout()
         })
         self.cacheImageView = imageView
     }
     
     override func prepareForReuse() {
+        super.prepareForReuse()
         self.cacheImageView = nil
-        for subview in Array(self.contentView.subviews) {
-            subview.removeFromSuperview()
-        }
+        //        for subview in Array(self.contentView.subviews) {
+        //            subview.removeFromSuperview()
+        //        }
+        self.imageView.image = nil
+//        self.imageView.frame = CGRectZero
     }
 }
