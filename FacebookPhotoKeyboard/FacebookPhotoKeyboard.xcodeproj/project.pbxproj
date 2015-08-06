@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		353485C0599ED6CEF8264AC2 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C4BF1133BD80FAE17FFF07E /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		8BD6774074E24EB628C9713E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C4BF1133BD80FAE17FFF07E /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A6BCD636CA7D9DFBD9C29F1E /* Pods_extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5B54E2E5888D9495C839CD /* Pods_extension.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		ABAC105B1B734CC400E40EB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC105A1B734CC400E40EB9 /* AppDelegate.swift */; };
 		ABAC105D1B734CC400E40EB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC105C1B734CC400E40EB9 /* ViewController.swift */; };
 		ABAC10601B734CC400E40EB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABAC105E1B734CC400E40EB9 /* Main.storyboard */; };
 		ABAC10621B734CC400E40EB9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAC10611B734CC400E40EB9 /* Images.xcassets */; };
 		ABAC10651B734CC400E40EB9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABAC10631B734CC400E40EB9 /* LaunchScreen.xib */; };
 		ABAC10711B734CC400E40EB9 /* FacebookPhotoKeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC10701B734CC400E40EB9 /* FacebookPhotoKeyboardTests.swift */; };
+		BB8768662DC4E263B5A7E1DF /* Pods_FacebookPhotoKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5477255C3270054708D491CE /* Pods_FacebookPhotoKeyboard.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D8BD6ED41B7350E400D432DC /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BD6ED31B7350E400D432DC /* KeyboardViewController.swift */; };
 		D8BD6ED71B7350E400D432DC /* FacebookPhotosCustomKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D8BD6ECF1B7350E400D432DC /* FacebookPhotosCustomKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -52,8 +54,13 @@
 
 /* Begin PBXFileReference section */
 		1324C2D8A896D1E2C99CB998 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		3595AD57D75108200B38D26C /* Pods-FacebookPhotosCustomKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookPhotosCustomKeyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FacebookPhotosCustomKeyboard/Pods-FacebookPhotosCustomKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		4EF3C4AA899ADAEBD6FAE222 /* Pods-extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-extension/Pods-extension.debug.xcconfig"; sourceTree = "<group>"; };
+		5477255C3270054708D491CE /* Pods_FacebookPhotoKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacebookPhotoKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C4BF1133BD80FAE17FFF07E /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73B2BF0208C2A029C4BAB4F0 /* Pods-extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-extension/Pods-extension.release.xcconfig"; sourceTree = "<group>"; };
 		8871C846B91412AC1287178B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A0CF9D09697B2A4718AB9CCE /* Pods-FacebookPhotoKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookPhotoKeyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FacebookPhotoKeyboard/Pods-FacebookPhotoKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
 		ABAC10551B734CC400E40EB9 /* FacebookPhotoKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookPhotoKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAC10591B734CC400E40EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABAC105A1B734CC400E40EB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,11 +71,15 @@
 		ABAC106A1B734CC400E40EB9 /* FacebookPhotoKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacebookPhotoKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAC106F1B734CC400E40EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABAC10701B734CC400E40EB9 /* FacebookPhotoKeyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookPhotoKeyboardTests.swift; sourceTree = "<group>"; };
+		AEC025CD0CABC9FA98A24628 /* Pods-FacebookPhotoKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookPhotoKeyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-FacebookPhotoKeyboard/Pods-FacebookPhotoKeyboard.release.xcconfig"; sourceTree = "<group>"; };
+		AF5B54E2E5888D9495C839CD /* Pods_extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8BD6ECF1B7350E400D432DC /* FacebookPhotosCustomKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FacebookPhotosCustomKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8BD6ED21B7350E400D432DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8BD6ED31B7350E400D432DC /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		D8EAE25E1B7360A800BFB33D /* FacebookPhotosCustomKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FacebookPhotosCustomKeyboard.entitlements; sourceTree = "<group>"; };
 		D8EAE25F1B7360B500BFB33D /* FacebookPhotoKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FacebookPhotoKeyboard.entitlements; sourceTree = "<group>"; };
+		E302C413145C82D0EEB73DC0 /* Pods-FacebookPhotosCustomKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookPhotosCustomKeyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-FacebookPhotosCustomKeyboard/Pods-FacebookPhotosCustomKeyboard.release.xcconfig"; sourceTree = "<group>"; };
+		FA319875D4E25A9B7C452483 /* Pods_FacebookPhotosCustomKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacebookPhotosCustomKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +88,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				353485C0599ED6CEF8264AC2 /* Pods.framework in Frameworks */,
+				BB8768662DC4E263B5A7E1DF /* Pods_FacebookPhotoKeyboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +104,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BD6774074E24EB628C9713E /* Pods.framework in Frameworks */,
+				A6BCD636CA7D9DFBD9C29F1E /* Pods_extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +116,12 @@
 			children = (
 				1324C2D8A896D1E2C99CB998 /* Pods.debug.xcconfig */,
 				8871C846B91412AC1287178B /* Pods.release.xcconfig */,
+				3595AD57D75108200B38D26C /* Pods-FacebookPhotosCustomKeyboard.debug.xcconfig */,
+				E302C413145C82D0EEB73DC0 /* Pods-FacebookPhotosCustomKeyboard.release.xcconfig */,
+				A0CF9D09697B2A4718AB9CCE /* Pods-FacebookPhotoKeyboard.debug.xcconfig */,
+				AEC025CD0CABC9FA98A24628 /* Pods-FacebookPhotoKeyboard.release.xcconfig */,
+				4EF3C4AA899ADAEBD6FAE222 /* Pods-extension.debug.xcconfig */,
+				73B2BF0208C2A029C4BAB4F0 /* Pods-extension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -111,6 +130,9 @@
 			isa = PBXGroup;
 			children = (
 				6C4BF1133BD80FAE17FFF07E /* Pods.framework */,
+				FA319875D4E25A9B7C452483 /* Pods_FacebookPhotosCustomKeyboard.framework */,
+				5477255C3270054708D491CE /* Pods_FacebookPhotoKeyboard.framework */,
+				AF5B54E2E5888D9495C839CD /* Pods_extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -201,13 +223,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABAC10741B734CC400E40EB9 /* Build configuration list for PBXNativeTarget "FacebookPhotoKeyboard" */;
 			buildPhases = (
-				67B54A671BC6BEC39BE23676 /* Check Pods Manifest.lock */,
 				ABAC10511B734CC300E40EB9 /* Sources */,
 				ABAC10521B734CC300E40EB9 /* Frameworks */,
 				ABAC10531B734CC300E40EB9 /* Resources */,
-				5902985F75DC4294F65DD6E0 /* Copy Pods Resources */,
 				D8BD6EDB1B7350E400D432DC /* Embed App Extensions */,
-				74CAEB93212684B9596C7A13 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -340,54 +359,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		5902985F75DC4294F65DD6E0 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		67B54A671BC6BEC39BE23676 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		74CAEB93212684B9596C7A13 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ABAC10511B734CC300E40EB9 /* Sources */ = {
@@ -536,7 +507,7 @@
 		};
 		ABAC10751B734CC400E40EB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1324C2D8A896D1E2C99CB998 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = A0CF9D09697B2A4718AB9CCE /* Pods-FacebookPhotoKeyboard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FacebookPhotoKeyboard/FacebookPhotoKeyboard.entitlements;
@@ -552,7 +523,7 @@
 		};
 		ABAC10761B734CC400E40EB9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8871C846B91412AC1287178B /* Pods.release.xcconfig */;
+			baseConfigurationReference = AEC025CD0CABC9FA98A24628 /* Pods-FacebookPhotoKeyboard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FacebookPhotoKeyboard/FacebookPhotoKeyboard.entitlements;
@@ -604,6 +575,7 @@
 		};
 		D8BD6ED81B7350E400D432DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EF3C4AA899ADAEBD6FAE222 /* Pods-extension.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = FacebookPhotosCustomKeyboard/FacebookPhotosCustomKeyboard.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -614,6 +586,7 @@
 				);
 				INFOPLIST_FILE = FacebookPhotosCustomKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PIN_APP_EXTENSIONS = 1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -622,12 +595,14 @@
 		};
 		D8BD6ED91B7350E400D432DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73B2BF0208C2A029C4BAB4F0 /* Pods-extension.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = FacebookPhotosCustomKeyboard/FacebookPhotosCustomKeyboard.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FacebookPhotosCustomKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PIN_APP_EXTENSIONS = 1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;

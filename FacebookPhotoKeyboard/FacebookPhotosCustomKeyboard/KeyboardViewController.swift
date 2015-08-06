@@ -14,7 +14,7 @@ import SwiftyJSON
 class KeyboardViewController: UIInputViewController {
     
     @IBOutlet var nextKeyboardButton: UIButton!
-    
+    var imageView : UIImageView!
     override func updateViewConstraints() {
         super.updateViewConstraints()
         
@@ -39,22 +39,23 @@ class KeyboardViewController: UIInputViewController {
         var nextKeyboardButtonBottomConstraint = NSLayoutConstraint(item: self.nextKeyboardButton, attribute: .Bottom, relatedBy: .Equal, toItem: self.view, attribute: .Bottom, multiplier: 1.0, constant: 0.0)
         self.view.addConstraints([nextKeyboardButtonLeftSideConstraint, nextKeyboardButtonBottomConstraint])
         
+        self.imageView = UIImageView()
+        
         let userDefaults = NSUserDefaults(suiteName: "group.com.rababa.FacebookPhotoKeyboard")
-        if let token = userDefaults?.valueForKey("access_token") as? Dictionary<String, AnyObject> {
-            let fbToken = FBSDKAccessToken(tokenString: token["tokenString"] as? String, permissions: token["permissions"] as? Array, declinedPermissions: token["declindePermissions"] as? Array, appID: token["appID"] as? String, userID: token["userID"] as? String, expirationDate: token["expirationDate"] as? NSDate, refreshDate: token["refreshDate"] as? NSDate)
-            FBSDKAccessToken.setCurrentAccessToken(fbToken)
-            let graphRequest = "/\(fbToken.userID)/photos?redirect=false&fields=link,images"
-            FBSDKGraphRequest(graphPath: graphRequest, parameters: nil, HTTPMethod:"GET").startWithCompletionHandler({ (connection, result, error) -> Void in
-                let jsonResult = JSON(result)
-                if let imageUrlString = jsonResult["data"][0]["images"][0]["source"].string {
-                    var imageView = UIImageView()
-                    self.view.addSubview(imageView)
-                    imageView.pin_setImageFromURL(NSURL(string: imageUrlString))
-                }
-            })
+        
+        if let rawPhotosData = userDefaults?.valueForKey("user_photos") {
+            let photos = JSON(rawPhotosData)
+            println(photos)
+            if let imageUrlString = photos["data"][0]["images"][5]["source"].string {
+                self.imageView.pin_setImageFromURL(NSURL(string: imageUrlString))
+            }
+            
         }
-        
-        
+        self.view.addSubview(self.imageView)
+    }
+    
+    override func viewWillLayoutSubviews() {
+        self.imageView.frame = self.view.bounds
     }
     
     override func didReceiveMemoryWarning() {

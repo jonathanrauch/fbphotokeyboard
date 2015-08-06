@@ -2,11 +2,17 @@ platform :ios, '8.0'
 
 use_frameworks!
 
-pod 'FBSDKLoginKit'
-pod 'PINRemoteImage', '~> 1.1'
-pod 'SwiftyJSON', '~> 2.2'
+
+
+target :extension, :exclusive=> true do
+    link_with 'FacebookPhotosCustomKeyboard'
+    pod 'SwiftyJSON', '~> 2.2'
+    pod 'PINRemoteImage', '~> 1.1'
+end
 
 target 'FacebookPhotoKeyboard' do
+
+pod 'FBSDKLoginKit'
 
 end
 
