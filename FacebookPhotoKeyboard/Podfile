@@ -1,0 +1,11 @@
+platform :ios, '8.0'
+
+pod 'FBSDKLoginKit'
+
+target 'FacebookPhotoKeyboard' do
+
+end
+
+target 'FacebookPhotoKeyboardTests' do
+
+end

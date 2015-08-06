@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABAC105B1B734CC400E40EB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC105A1B734CC400E40EB9 /* AppDelegate.swift */; };
+		ABAC105D1B734CC400E40EB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC105C1B734CC400E40EB9 /* ViewController.swift */; };
+		ABAC10601B734CC400E40EB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABAC105E1B734CC400E40EB9 /* Main.storyboard */; };
+		ABAC10621B734CC400E40EB9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAC10611B734CC400E40EB9 /* Images.xcassets */; };
+		ABAC10651B734CC400E40EB9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABAC10631B734CC400E40EB9 /* LaunchScreen.xib */; };
+		ABAC10711B734CC400E40EB9 /* FacebookPhotoKeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC10701B734CC400E40EB9 /* FacebookPhotoKeyboardTests.swift */; };
+		ED8CDBB7655EDDAF8CB72055 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4690992BF9E180F00BA674AB /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ABAC106B1B734CC400E40EB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABAC104D1B734CC300E40EB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABAC10541B734CC300E40EB9;
+			remoteInfo = FacebookPhotoKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1324C2D8A896D1E2C99CB998 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		4690992BF9E180F00BA674AB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8871C846B91412AC1287178B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		ABAC10551B734CC400E40EB9 /* FacebookPhotoKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookPhotoKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABAC10591B734CC400E40EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABAC105A1B734CC400E40EB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ABAC105C1B734CC400E40EB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ABAC105F1B734CC400E40EB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABAC10611B734CC400E40EB9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ABAC10641B734CC400E40EB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		ABAC106A1B734CC400E40EB9 /* FacebookPhotoKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacebookPhotoKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABAC106F1B734CC400E40EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABAC10701B734CC400E40EB9 /* FacebookPhotoKeyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookPhotoKeyboardTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABAC10521B734CC300E40EB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED8CDBB7655EDDAF8CB72055 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABAC10671B734CC400E40EB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		580E212FD4C154904478610F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1324C2D8A896D1E2C99CB998 /* Pods.debug.xcconfig */,
+				8871C846B91412AC1287178B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		62ACD4694B859B33170BFBC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4690992BF9E180F00BA674AB /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABAC104C1B734CC300E40EB9 = {
+			isa = PBXGroup;
+			children = (
+				ABAC10571B734CC400E40EB9 /* FacebookPhotoKeyboard */,
+				ABAC106D1B734CC400E40EB9 /* FacebookPhotoKeyboardTests */,
+				ABAC10561B734CC400E40EB9 /* Products */,
+				580E212FD4C154904478610F /* Pods */,
+				62ACD4694B859B33170BFBC2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ABAC10561B734CC400E40EB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABAC10551B734CC400E40EB9 /* FacebookPhotoKeyboard.app */,
+				ABAC106A1B734CC400E40EB9 /* FacebookPhotoKeyboardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABAC10571B734CC400E40EB9 /* FacebookPhotoKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				ABAC105A1B734CC400E40EB9 /* AppDelegate.swift */,
+				ABAC105C1B734CC400E40EB9 /* ViewController.swift */,
+				ABAC105E1B734CC400E40EB9 /* Main.storyboard */,
+				ABAC10611B734CC400E40EB9 /* Images.xcassets */,
+				ABAC10631B734CC400E40EB9 /* LaunchScreen.xib */,
+				ABAC10581B734CC400E40EB9 /* Supporting Files */,
+			);
+			path = FacebookPhotoKeyboard;
+			sourceTree = "<group>";
+		};
+		ABAC10581B734CC400E40EB9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABAC10591B734CC400E40EB9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABAC106D1B734CC400E40EB9 /* FacebookPhotoKeyboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABAC10701B734CC400E40EB9 /* FacebookPhotoKeyboardTests.swift */,
+				ABAC106E1B734CC400E40EB9 /* Supporting Files */,
+			);
+			path = FacebookPhotoKeyboardTests;
+			sourceTree = "<group>";
+		};
+		ABAC106E1B734CC400E40EB9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABAC106F1B734CC400E40EB9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABAC10541B734CC300E40EB9 /* FacebookPhotoKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABAC10741B734CC400E40EB9 /* Build configuration list for PBXNativeTarget "FacebookPhotoKeyboard" */;
+			buildPhases = (
+				67B54A671BC6BEC39BE23676 /* Check Pods Manifest.lock */,
+				ABAC10511B734CC300E40EB9 /* Sources */,
+				ABAC10521B734CC300E40EB9 /* Frameworks */,
+				ABAC10531B734CC300E40EB9 /* Resources */,
+				5902985F75DC4294F65DD6E0 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FacebookPhotoKeyboard;
+			productName = FacebookPhotoKeyboard;
+			productReference = ABAC10551B734CC400E40EB9 /* FacebookPhotoKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ABAC10691B734CC400E40EB9 /* FacebookPhotoKeyboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABAC10771B734CC400E40EB9 /* Build configuration list for PBXNativeTarget "FacebookPhotoKeyboardTests" */;
+			buildPhases = (
+				ABAC10661B734CC400E40EB9 /* Sources */,
+				ABAC10671B734CC400E40EB9 /* Frameworks */,
+				ABAC10681B734CC400E40EB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABAC106C1B734CC400E40EB9 /* PBXTargetDependency */,
+			);
+			name = FacebookPhotoKeyboardTests;
+			productName = FacebookPhotoKeyboardTests;
+			productReference = ABAC106A1B734CC400E40EB9 /* FacebookPhotoKeyboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABAC104D1B734CC300E40EB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Rababa;
+				TargetAttributes = {
+					ABAC10541B734CC300E40EB9 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					ABAC10691B734CC400E40EB9 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = ABAC10541B734CC300E40EB9;
+					};
+				};
+			};
+			buildConfigurationList = ABAC10501B734CC300E40EB9 /* Build configuration list for PBXProject "FacebookPhotoKeyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ABAC104C1B734CC300E40EB9;
+			productRefGroup = ABAC10561B734CC400E40EB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABAC10541B734CC300E40EB9 /* FacebookPhotoKeyboard */,
+				ABAC10691B734CC400E40EB9 /* FacebookPhotoKeyboardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABAC10531B734CC300E40EB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABAC10601B734CC400E40EB9 /* Main.storyboard in Resources */,
+				ABAC10651B734CC400E40EB9 /* LaunchScreen.xib in Resources */,
+				ABAC10621B734CC400E40EB9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABAC10681B734CC400E40EB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5902985F75DC4294F65DD6E0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67B54A671BC6BEC39BE23676 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABAC10511B734CC300E40EB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABAC105D1B734CC400E40EB9 /* ViewController.swift in Sources */,
+				ABAC105B1B734CC400E40EB9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABAC10661B734CC400E40EB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABAC10711B734CC400E40EB9 /* FacebookPhotoKeyboardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ABAC106C1B734CC400E40EB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABAC10541B734CC300E40EB9 /* FacebookPhotoKeyboard */;
+			targetProxy = ABAC106B1B734CC400E40EB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ABAC105E1B734CC400E40EB9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABAC105F1B734CC400E40EB9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ABAC10631B734CC400E40EB9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABAC10641B734CC400E40EB9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ABAC10721B734CC400E40EB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ABAC10731B734CC400E40EB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABAC10751B734CC400E40EB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1324C2D8A896D1E2C99CB998 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FacebookPhotoKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rababa.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ABAC10761B734CC400E40EB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8871C846B91412AC1287178B /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FacebookPhotoKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rababa.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ABAC10781B734CC400E40EB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FacebookPhotoKeyboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rababa.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FacebookPhotoKeyboard.app/FacebookPhotoKeyboard";
+			};
+			name = Debug;
+		};
+		ABAC10791B734CC400E40EB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FacebookPhotoKeyboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rababa.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FacebookPhotoKeyboard.app/FacebookPhotoKeyboard";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABAC10501B734CC300E40EB9 /* Build configuration list for PBXProject "FacebookPhotoKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABAC10721B734CC400E40EB9 /* Debug */,
+				ABAC10731B734CC400E40EB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABAC10741B734CC400E40EB9 /* Build configuration list for PBXNativeTarget "FacebookPhotoKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABAC10751B734CC400E40EB9 /* Debug */,
+				ABAC10761B734CC400E40EB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABAC10771B734CC400E40EB9 /* Build configuration list for PBXNativeTarget "FacebookPhotoKeyboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABAC10781B734CC400E40EB9 /* Debug */,
+				ABAC10791B734CC400E40EB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABAC104D1B734CC300E40EB9 /* Project object */;
+}
