@@ -13,6 +13,8 @@
 		ABAC10621B734CC400E40EB9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAC10611B734CC400E40EB9 /* Images.xcassets */; };
 		ABAC10651B734CC400E40EB9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABAC10631B734CC400E40EB9 /* LaunchScreen.xib */; };
 		ABAC10711B734CC400E40EB9 /* FacebookPhotoKeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC10701B734CC400E40EB9 /* FacebookPhotoKeyboardTests.swift */; };
+		D8BD6ED41B7350E400D432DC /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BD6ED31B7350E400D432DC /* KeyboardViewController.swift */; };
+		D8BD6ED71B7350E400D432DC /* FacebookPhotosCustomKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D8BD6ECF1B7350E400D432DC /* FacebookPhotosCustomKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		ED8CDBB7655EDDAF8CB72055 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4690992BF9E180F00BA674AB /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +26,28 @@
 			remoteGlobalIDString = ABAC10541B734CC300E40EB9;
 			remoteInfo = FacebookPhotoKeyboard;
 		};
+		D8BD6ED51B7350E400D432DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABAC104D1B734CC300E40EB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8BD6ECE1B7350E400D432DC;
+			remoteInfo = FacebookPhotosCustomKeyboard;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D8BD6EDB1B7350E400D432DC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D8BD6ED71B7350E400D432DC /* FacebookPhotosCustomKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1324C2D8A896D1E2C99CB998 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -40,6 +63,9 @@
 		ABAC106A1B734CC400E40EB9 /* FacebookPhotoKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacebookPhotoKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAC106F1B734CC400E40EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABAC10701B734CC400E40EB9 /* FacebookPhotoKeyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookPhotoKeyboardTests.swift; sourceTree = "<group>"; };
+		D8BD6ECF1B7350E400D432DC /* FacebookPhotosCustomKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FacebookPhotosCustomKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8BD6ED21B7350E400D432DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8BD6ED31B7350E400D432DC /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +78,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		ABAC10671B734CC400E40EB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8BD6ECC1B7350E400D432DC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -83,6 +116,7 @@
 			children = (
 				ABAC10571B734CC400E40EB9 /* FacebookPhotoKeyboard */,
 				ABAC106D1B734CC400E40EB9 /* FacebookPhotoKeyboardTests */,
+				D8BD6ED01B7350E400D432DC /* FacebookPhotosCustomKeyboard */,
 				ABAC10561B734CC400E40EB9 /* Products */,
 				580E212FD4C154904478610F /* Pods */,
 				62ACD4694B859B33170BFBC2 /* Frameworks */,
@@ -94,6 +128,7 @@
 			children = (
 				ABAC10551B734CC400E40EB9 /* FacebookPhotoKeyboard.app */,
 				ABAC106A1B734CC400E40EB9 /* FacebookPhotoKeyboardTests.xctest */,
+				D8BD6ECF1B7350E400D432DC /* FacebookPhotosCustomKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +171,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D8BD6ED01B7350E400D432DC /* FacebookPhotosCustomKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D8BD6ED31B7350E400D432DC /* KeyboardViewController.swift */,
+				D8BD6ED11B7350E400D432DC /* Supporting Files */,
+			);
+			path = FacebookPhotosCustomKeyboard;
+			sourceTree = "<group>";
+		};
+		D8BD6ED11B7350E400D432DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8BD6ED21B7350E400D432DC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,10 +200,12 @@
 				ABAC10521B734CC300E40EB9 /* Frameworks */,
 				ABAC10531B734CC300E40EB9 /* Resources */,
 				5902985F75DC4294F65DD6E0 /* Copy Pods Resources */,
+				D8BD6EDB1B7350E400D432DC /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D8BD6ED61B7350E400D432DC /* PBXTargetDependency */,
 			);
 			name = FacebookPhotoKeyboard;
 			productName = FacebookPhotoKeyboard;
@@ -176,6 +230,23 @@
 			productReference = ABAC106A1B734CC400E40EB9 /* FacebookPhotoKeyboardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		D8BD6ECE1B7350E400D432DC /* FacebookPhotosCustomKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8BD6EDA1B7350E400D432DC /* Build configuration list for PBXNativeTarget "FacebookPhotosCustomKeyboard" */;
+			buildPhases = (
+				D8BD6ECB1B7350E400D432DC /* Sources */,
+				D8BD6ECC1B7350E400D432DC /* Frameworks */,
+				D8BD6ECD1B7350E400D432DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FacebookPhotosCustomKeyboard;
+			productName = FacebookPhotosCustomKeyboard;
+			productReference = D8BD6ECF1B7350E400D432DC /* FacebookPhotosCustomKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -192,6 +263,9 @@
 					ABAC10691B734CC400E40EB9 = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = ABAC10541B734CC300E40EB9;
+					};
+					D8BD6ECE1B7350E400D432DC = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -210,6 +284,7 @@
 			targets = (
 				ABAC10541B734CC300E40EB9 /* FacebookPhotoKeyboard */,
 				ABAC10691B734CC400E40EB9 /* FacebookPhotoKeyboardTests */,
+				D8BD6ECE1B7350E400D432DC /* FacebookPhotosCustomKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -226,6 +301,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		ABAC10681B734CC400E40EB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8BD6ECD1B7350E400D432DC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -285,6 +367,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D8BD6ECB1B7350E400D432DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8BD6ED41B7350E400D432DC /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +382,11 @@
 			isa = PBXTargetDependency;
 			target = ABAC10541B734CC300E40EB9 /* FacebookPhotoKeyboard */;
 			targetProxy = ABAC106B1B734CC400E40EB9 /* PBXContainerItemProxy */;
+		};
+		D8BD6ED61B7350E400D432DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8BD6ECE1B7350E400D432DC /* FacebookPhotosCustomKeyboard */;
+			targetProxy = D8BD6ED51B7350E400D432DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -459,6 +554,30 @@
 			};
 			name = Release;
 		};
+		D8BD6ED81B7350E400D432DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FacebookPhotosCustomKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D8BD6ED91B7350E400D432DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FacebookPhotosCustomKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -488,6 +607,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D8BD6EDA1B7350E400D432DC /* Build configuration list for PBXNativeTarget "FacebookPhotosCustomKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8BD6ED81B7350E400D432DC /* Debug */,
+				D8BD6ED91B7350E400D432DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
