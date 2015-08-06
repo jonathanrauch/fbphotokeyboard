@@ -16,7 +16,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loginButton.readPermissions = ["photos"]
+        //loginButton.readPermissions = ["photos"]
     }
 
     override func didReceiveMemoryWarning() {
